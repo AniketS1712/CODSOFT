@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffe3;
+  color: #100b00;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f3a6;
+}
+
+/* header styling start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 1%;
+  font-size: 1.5rem;
+  background-color: #100b00;
+  color: #f3f3a6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  margin-left: 2%;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.icons {
+  margin-left: 60px;
+}
+
+/* header styling end */
+
+.images {
+  margin-top: 0.3%;
+}
+
+/* display card styling start */
+.flip-card {
+  background-color: transparent;
+  width: 14%;
+  height: 300px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #100b00;
+  border-radius: 0.7rem;
+  box-shadow: 5px 5px 5px #100b00, 7px 7px 20px #100b00;
+}
+
+.flip-card-back {
+  background: #100b00;
+  color: #f3f3a6;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  border-radius: 1rem;
+}
+
+.flip-card-front img {
+  width: 96%;
+  height: 90%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.flip-card-back img {
+  border-radius: 0.9rem;
+  width: 96%;
+  object-fit: cover;
+}
+
+.content {
+  margin-top: 4%;
+}
+
+.content span {
+  display: flex;
+  text-align: start;
+  font-size: 1.1rem;
+}
+/* display card styling end */
+
+/* button styling start */
+.btn {
+  margin: 5% 0 5% 0;
+  width: 15rem;
+  height: 3rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn:after {
+  content: "";
+  background: #f3f3a6;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* button styling end */
+
+.Tshirt {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Tshirt h1 {
+  margin-bottom: 2%;
+}
+
+.tshirtcontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Shirt {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Shirt h1 {
+  margin-bottom: 2%;
+}
+
+.shirtcontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.CargoPants {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.CargoPants h1 {
+  margin-bottom: 2%;
+}
+
+.cargocontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Jeans {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Jeans h1 {
+  margin-bottom: 2%;
+}
+
+.jeanscontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer styling start */
+footer {
+  background-color: #100b00;
+  color: #f3f3a6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1% 0 10% 0;
+  line-height: 200%;
+}
+
+footer div h3 {
+  line-height: 400%;
+  border-bottom: 2px solid #f3f3a6;
+}
+
+.social-platforms {
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 100% 5% 5% 5%;
+  transition: 0.2s ease-in-out;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5% 100% 5% 5%;
+  transition: 0.2s ease-in-out;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5% 5% 5% 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5% 5% 100% 5%;
+  transition: 0.2s ease-in-out;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  box-shadow: 1px 1px 0px rgb(179, 175, 175), 2px 2px 0px rgb(179, 175, 175),
+    3px 3px 0px rgb(179, 175, 175), 4px 4px 0px rgb(179, 175, 175),
+    5px 5px 0px rgb(179, 175, 175);
+    cursor: pointer;
+}
+
+.facebook {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.github {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.instagram{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.twitter{
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.card1:hover{
+  scale: 1.1;
+  background-color: #4662ff;
+  box-shadow: 1px 1px 0px #bdc2e2, 2px 2px 0px #9ca6e0, 3px 3px 0px #9ca6e0,
+    4px 4px 0px #9ca6e0, 5px 5px 0px #9ca6e0;
+}
+
+.card2:hover {
+  scale: 1.1;
+  background-color: black;
+  box-shadow: 1px 1px 0px rgb(124, 123, 123), 2px 2px 0px #333, 3px 3px 0px #333,
+    4px 4px 0px #333, 5px 5px 0px #333;
+}
+
+.card3:hover {
+  scale: 1.1;
+  background-color: #cc39a4;
+  box-shadow: 1px 1px 0px #eeb1de, 2px 2px 0px #d365b6, 3px 3px 0px #d365b6,
+    4px 4px 0px #d365b6, 5px 5px 0px #d365b6;
+}
+
+.card4:hover {
+  scale: 1.1;
+  background-color: #03a9f4;
+  box-shadow: 1px 1px 0px #a1defa, 2px 2px 0px #41bef8, 3px 3px 0px #41bef8,
+    4px 4px 0px #41bef8, 5px 5px 0px #41bef8;
+}
+
+.card2:hover .github {
+  color: white;
+}
