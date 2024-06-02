@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a9dca9e707.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <p>Aniket Singhal</p>
+      <ul>
+        <li class="nav"><a href="portfolio.html" class="links">Home</a></li>
+        <li class="nav"><a href="portfolio.html" class="links">About Me</a></li>
+        <li class="nav"><a href="#services" class="links">Services</a></li>
+        <li class="nav"><a href="#projects" class="links">Projects</a></li>
+        <li class="nav"><a href="#contact" class="links">Contact Me</a></li>
+      </ul>
+    </header>
+    <div class="introduction">
+      <div class="intro">
+        <h1>Hello! I am Aniket Singhal</h1>
+        <h3>I'm a Developer</h3>
+        <button class="btn"><a href="Aniket Resume.pdf">DOWNLOAD</a></button>
+      </div>
+      <div class="my-img">
+        <img src="AS-image.jpg" alt="" />
+      </div>
+    </div>
+    <div class="services" id="services">
+      <h3>|| My Services</h3>
+      <h2>Services Provided For My Clients</h2>
+      <div class="container">
+        <div class="card">
+          <p class="ui">UI/UX</p>
+          <ul>
+            <li>>> Landing Pages</li>
+            <li>>> Prototyping</li>
+            <li>>> Wireframing</li>
+            <li>>> User Flow</li>
+            <li>>> Interfaces</li>
+            <li>>> Testing</li>
+            <li>>> Website Designs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="development">Development</p>
+          <ul>
+            <li>>> HTML/CSS</li>
+            <li>>> JavaScript</li>
+            <li>>> Django</li>
+            <li>>> PHP</li>
+            <li>>> C++</li>
+            <li>>> Python</li>
+            <li>>> Java</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <span>My Projects</span>
+        <a href="bciit_info_portal.html">
+          <div class="bciit">
+            <img src="bciit logo.jpg" class="image" />
+            <h3>BCIIT INFO PORTAL</h3>
+          </div>
+        </a>
+    </div>
+    <div class="footer" id="contact">
+      <div class="footer-section form-section">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <label for="purpose">Purpose:</label>
+          <input type="text" id="purpose" name="purpose" placeholder="Purpose of Contact" required>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="footer-section info-section">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 1234 Street Name, City, State, ZIP</p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Email:</strong> info@example.com</p>
+
+        <h2>Follow Me</h2>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
